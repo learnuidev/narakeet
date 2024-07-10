@@ -4,11 +4,11 @@ const { apiConfig } = require("./lib/api-config");
  * Function to return all the voices supported by narakeet
  */
 
-const listVoices = async () => {
+const listVoices = async ({ apiKey }) => {
   const resp = await fetch(`${apiConfig.narakeetApiUrl}/voices`, {
     method: "GET",
     headers: {
-      "x-api-key": apiConfig.narakeetApiKey,
+      "x-api-key": apiKey,
     },
   });
 
