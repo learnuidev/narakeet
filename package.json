@@ -1,6 +1,6 @@
 {
   "name": "narakeet",
-  "version": "11.06.2024.22.54",
+  "version": "11.06.2024.22.55",
   "description": "Unofficial Narakeet SDK in JavaScript [TypeScript Coming Soon]",
   "main": "src/index.js",
   "scripts": {

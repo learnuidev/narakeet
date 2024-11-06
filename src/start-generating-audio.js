@@ -13,7 +13,7 @@ const { apiConfig } = require("./lib/api-config");
 
 const startGeneratingAudio = async ({ apiKey, text, voice, speed, volume }) => {
   const voiceSpeed = speed || 1;
-  const voiceVolume = volume || 1;
+  const voiceVolume = volume || "standard";
   const resp = await fetch(
     `${apiConfig.narakeetApiUrl}/text-to-speech/m4a?voice=${voice}&voice-speed=${voiceSpeed}&voice-volume=${voiceVolume}`,
     {
