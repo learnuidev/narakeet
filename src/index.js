@@ -4,8 +4,8 @@ const { startGeneratingAudio } = require("./start-generating-audio");
 
 const narakeetApi = ({ apiKey }) => {
   return {
-    startGeneratingAudio: async ({ text, audio }) => {
-      return startGeneratingAudio({ apiKey, text, audio });
+    startGeneratingAudio: async ({ text, voice, speed, volume }) => {
+      return startGeneratingAudio({ apiKey, text, voice, speed, volume });
     },
     getAudioResource,
     listVoices: async () => {
